@@ -15,20 +15,20 @@ sections = 20
   }
   str += 100 + "% " + 0 + "%"
   str += ")"
-  document.getElementsByClassName('div1')[0].setAttribute("style", str)
+  document.getElementById('div1').setAttribute("style", str)
 
   var myScrollFunc = function () {
     var y = window.scrollY
-    if (y >= document.getElementsByClassName('div1')[0].clientHeight) {
-      document.getElementsByClassName("sidebar")[0].classList.replace('noscroll', 'scroll');
+    if (y >= document.getElementById('div1').clientHeight) {
+      document.getElementById("sidebar").classList.replace('noscroll', 'scroll');
     } else {
-      document.getElementsByClassName("sidebar")[0].classList.replace('scroll', 'noscroll');
+      document.getElementById("sidebar").classList.replace('scroll', 'noscroll');
     }
 
     if (y == 0) {
-      document.getElementById('scroll-button').className = "show"
+      document.getElementById('scroll-button').style = ""
     } else {
-      document.getElementById('scroll-button').className = "hide"
+      document.getElementById('scroll-button').style = "display: none !important"
     }
   };
 
@@ -40,23 +40,23 @@ sections = 20
     const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
 
     if (vw / vh < 1.5) {
-      document.getElementsByClassName('div1')[0].className = 'div1 nofull'
-      document.getElementsByClassName('div2')[0].className = 'div2 nofull'
-      document.getElementById('scroll-button').className = 'hide'
+      document.getElementById('div1').className = 'nofull'
+      document.getElementById('div2').className = 'nofull'
+      document.getElementById('scroll-button').style = "display: none !important"
     } else {
-      document.getElementsByClassName('div1')[0].className = 'div1 full'
-      document.getElementsByClassName('div2')[0].className = 'div2 full'
-      document.getElementById('scroll-button').className = 'show'
+      document.getElementById('div1').className = 'full'
+      document.getElementById('div2').className = 'full'
+      document.getElementById('scroll-button').style = ""
     }
 
     if (vw < 1000) {
-      document.getElementsByClassName('sidebar')[0].classList.replace('show', 'hide')
+      document.getElementById('sidebar').style.display = "none"
       document.getElementById('text').style = "width: 90%"
-      document.getElementById('mobile-menu-button').className = 'show'
+      document.getElementById('mobile-menu-button').style.display = ""
     } else {
-      document.getElementsByClassName('sidebar')[0].classList.replace('hide', 'show')
+      document.getElementById('sidebar').style.display = ""
       document.getElementById('text').style = "width: 50%"
-      document.getElementById('mobile-menu-button').className = 'hide'
+      document.getElementById('mobile-menu-button').style.display = 'none'
     }
   }
   addEventListener("resize", sizeCheck);
