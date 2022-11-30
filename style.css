@@ -173,10 +173,11 @@ ul>a:hover {
 }
 
 #sidebar-button {
-    top: 50vh;
-    left: 10px;
+    top: 50%;
+    left: 100%;
+    line-height: 1.1;
 
-    transform: translateY(-50%);
+    transform: translateY(-50%) translateX(-50%);
 }
 
 #mobile-menu-button {
