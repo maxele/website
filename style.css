@@ -59,6 +59,9 @@ body>div {
     margin-left: auto;
     margin-right: auto;
     padding-top: 20px;
+
+    transition-duration: 250ms;
+    transition-property: width;
 }
 
 a {
@@ -106,6 +109,11 @@ p {
     width: 22vw;
     border-right: 2px solid var(--light);
     text-align: right;
+
+    transform: translate(-100%);
+
+    transition-duration: 250ms;
+    transition-property: transform;
 }
 
 .sidebar h2 {
@@ -148,13 +156,11 @@ ul>a:hover {
     border-bottom: 2px solid var(--light);
 }
 
+#sidebar-button,
 #mobile-menu-button {
     position: fixed;
     z-index: 3002;
 
-    bottom: 10px;
-    left: 50vw;
-    transform: translate(-50%);
     font-size: 20px;
     padding: 10px;
     color: var(--light);
@@ -162,7 +168,22 @@ ul>a:hover {
     background-color: var(--dark);
     border-radius: 50ex;
 
-    animation-duration: 250ms;
+    transition-duration: 250ms;
+    transition-property: all;
+}
+
+#sidebar-button {
+    top: 50vh;
+    left: 10px;
+
+    transform: translateY(-50%);
+}
+
+#mobile-menu-button {
+    bottom: 10px;
+    left: 50vw;
+
+    transform: translate(-50%);
 }
 
 #mobile-menu {
@@ -178,49 +199,6 @@ ul>a:hover {
     padding-left: 5%;
     padding-right: 5%;
 
-    animation-duration: 250ms;
-}
-
-@keyframes menuButtonOpen {
-    from {
-        bottom: 10px;
-        transform: translate(-50%);
-    }
-
-    to {
-        transform: translate(-50%, 50%);
-        bottom: 60%;
-    }
-}
-
-@keyframes menuButtonClose {
-    from {
-        bottom: 60%;
-        transform: translate(-50%, 50%);
-    }
-
-    to {
-        bottom: 10px;
-        transform: translate(-50%);
-    }
-}
-
-@keyframes menuOpen {
-    from {
-        bottom: -60%
-    }
-
-    to {
-        bottom: 0px
-    }
-}
-
-@keyframes menuClose {
-    from {
-        bottom: 0px
-    }
-
-    to {
-        bottom: -60%
-    }
+    transition-duration: 250ms;
+    transition-property: all;
 }
