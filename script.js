@@ -107,3 +107,4 @@ var exitSidebar = function() {
 
 myScrollFunc()
 sizeCheck()
+exitSidebar()
