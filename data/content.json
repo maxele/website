@@ -1,0 +1,21 @@
+[
+  {
+    "type": "simple-title-text",
+    "title": "whoami",
+    "text": [
+      "Me good programming man 👍."
+    ]
+  },
+  {
+    "type": "array",
+    "title": "projects",
+    "elements": [
+      {
+        "title": "This Website!",
+        "text": "This is a project too i guess.",
+        "link-text": "This is a project too i guess. Link to that amazing project.",
+        "link-url": ""
+      }
+    ]
+  }
+]

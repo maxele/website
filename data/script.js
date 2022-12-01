@@ -85,7 +85,7 @@ var exitMobileMenu = function () {
   document.getElementById('mobile-menu-button').onclick = mobileMenu
 }
 
-var sidebar = function() {
+var sidebar = function () {
   // document.getElementById('sidebar-button').value = "C\nL\nO\nS\nE"
   document.getElementById('sidebar-button').style.transform = "translateY(-50%) translateX(-50%)"
   document.getElementById('sidebar-button').onclick = exitSidebar
@@ -95,7 +95,7 @@ var sidebar = function() {
   document.getElementById('text').style.width = '50%'
 }
 
-var exitSidebar = function() {
+var exitSidebar = function () {
   // document.getElementById('sidebar-button').value = "M\nE\nN\nU"
   document.getElementById('sidebar-button').style.transform = "translateY(-50%) translateX(50%)"
   document.getElementById('sidebar-button').onclick = sidebar
@@ -108,3 +108,25 @@ var exitSidebar = function() {
 myScrollFunc()
 sizeCheck()
 exitSidebar()
+
+var text = document.getElementById('text')
+var links = document.querySelector('#sidebar')
+
+var handleSection = (section) => {
+  if (section['type'] == 'simple-title-text') {
+    console.log(section['title'])
+    section['text'].forEach(paragraph => {
+      console.log(paragraph)
+    });
+  }
+}
+
+var data = fetch('./data.json')
+  .then((response) => response.json())
+  .then((data) => {
+    for (const section in data) {
+      if (Object.hasOwnProperty.call(data, section)) {
+        handleSection(data[section])
+      }
+    }
+  });
