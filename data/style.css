@@ -193,7 +193,7 @@ ul>a:hover {
     background-color: var(--dark);
     color: var(--light);
     border-top: 2px solid var(--light);
-    width: 100%;
+    width: 100vw;
     height: 60%;
     bottom: -65%;
 
@@ -202,4 +202,20 @@ ul>a:hover {
 
     transition-duration: 250ms;
     transition-property: all;
+}
+
+select {
+    font-size: 30px;
+    background-color: var(--dark);
+    color: var(--light);
+    border: 2px solid var(--light);
+    border-radius: 50ex;
+
+    padding: 5px 10px;
+}
+
+#mmenu-lang {
+    position: absolute;
+    top: 20px;
+    left: 90vw;
 }

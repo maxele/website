@@ -1,21 +1,224 @@
-[
-  {
-    "type": "simple-title-text",
-    "title": "whoami",
-    "text": [
-      "Me good programming man 👍."
-    ]
-  },
-  {
-    "type": "array",
-    "title": "projects",
-    "elements": [
-      {
-        "title": "This Website!",
-        "text": "This is a project too i guess.",
-        "link-text": "This is a project too i guess. Link to that amazing project.",
-        "link-url": ""
-      }
-    ]
-  }
-]
+{
+  "en-US": [
+    {
+      "type": "simple-title-text",
+      "id": "whoami",
+      "title": "whoami",
+      "text": [
+        "Me good programming man 👍."
+      ]
+    },
+    {
+      "type": "array",
+      "id": "projects",
+      "title": "projects",
+      "elements": [
+        {
+          "title": "This Website!",
+          "text": "This is a project too i guess.",
+          "link-text": "This is a project too i guess. Link to that amazing project.",
+          "link-url": ""
+        },
+        {
+          "title": "This is just a test Project",
+          "text": "This is just a test",
+          "link-text": "This link isn't very useful.",
+          "link-url": ""
+        }
+      ]
+    },
+    {
+      "type": "simple-title-text",
+      "id": "contacts",
+      "title": "contact me",
+      "text": [
+        "Contact me here."
+      ]
+    },
+    {
+      "type": "simple-title-text",
+      "id": "test",
+      "title": "this is just a spacer",
+      "text": [
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer"
+      ]
+    }
+  ],
+  "it": [
+    {
+      "type": "simple-title-text",
+      "id": "whoami",
+      "title": "whoami",
+      "text": [
+        "Io essere programmatore 👍."
+      ]
+    },
+    {
+      "type": "array",
+      "id": "projects",
+      "title": "projects",
+      "elements": [
+        {
+          "title": "Questa pagina web!",
+          "text": "Anche questo e un progetto.",
+          "link-text": "Link per arrivare a quel progetto bellissimo.",
+          "link-url": ""
+        },
+        {
+          "title": "Questo e un progetto per provare",
+          "text": "E solo un test",
+          "link-text": "Questo link non e molto utile",
+          "link-url": ""
+        }
+      ]
+    },
+    {
+      "type": "simple-title-text",
+      "id": "contacts",
+      "title": "contact me",
+      "text": [
+        "Contact me here."
+      ]
+    },
+    {
+      "type": "simple-title-text",
+      "id": "test",
+      "title": "questo e solo un spacer",
+      "text": [
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer"
+      ]
+    }
+  ],
+  "de": [
+    {
+      "type": "simple-title-text",
+      "id": "whoami",
+      "title": "bingobongo",
+      "text": [
+        "Ich guta Programmiermensch 👍."
+      ]
+    },
+    {
+      "type": "array",
+      "id": "projects",
+      "title": "projects",
+      "elements": [
+        {
+          "title": "Diese Website!",
+          "text": "Das ist auch ein projekt.",
+          "link-text": "Link zu dem unglaublichen projekt.",
+          "link-url": ""
+        },
+        {
+          "title": "Das ist nur ein test Projekt",
+          "text": "Nur ein TEST",
+          "link-text": "Dieser link ist nicht sehr nutzlich.",
+          "link-url": ""
+        }
+      ]
+    },
+    {
+      "type": "simple-title-text",
+      "id": "contacts",
+      "title": "Kontakte",
+      "text": [
+        "Kontaktiren sie mich JETZT"
+      ]
+    },
+    {
+      "type": "simple-title-text",
+      "id": "test",
+      "title": "this is just a spacer",
+      "text": [
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer",
+        "spacer"
+      ]
+    }
+  ]
+}
